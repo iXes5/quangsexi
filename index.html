@@ -1,5 +1,8 @@
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web mua bán của cửa hàng Vũ Quang</title>
 </head>
 <script>
@@ -10,7 +13,7 @@
         function changeBackground(color) {
             document.body.style.background = color
         }
-        window.addEventListener("load",function() {changeBackground('lightblue')})    
+        window.addEventListener("load",function() {changeBackground('lightgreen')})    
     </script>
 
     <style>
@@ -18,20 +21,14 @@
             color: red
         }
 
-        h2 {
-            color: darkorange
-        }
-        
         span {
-            color: black;
-        }
-
-        .hoctap {
-            color: green
+            color: black
         }
 
         .xaphong {
-            color: brown
+            color: brown;
+            font-size: large;
+            font-weight: 800
         }
 
         .contact {
@@ -46,50 +43,14 @@
             color: indigo;
             font-weight: 700
         }
+
+        .image {
+            width: 300;
+            border-radius: 20px
+        }
     </style>
 
-    <h1>Giới thiệu về ông chủ của trang web này</h1>
-
-    <script>
-        let quang = {
-            name: 'Trần Vũ Quang',
-            age: 15 + ' tuổi',
-            deptrai: true,
-            sing: function() {
-                document.write('Tôi sẽ hát một đoạn!' + "<br/>" + 'Anh không theo đuổi em nữa...' + "<br/>")
-            }
-        }
-        document.write('Xin chào các bạn tôi là:' + "<br/>" + quang.name + "<br/>" + quang.age + "<br/>")
-        document.write('Tôi có đẹp trai không? ' + quang.deptrai + "<br/>")
-        quang.sing();
-    </script>
-
-    <h2>Ngày hôm nay trang web này mang đến cho các bạn những mặt hàng rất đáng tin cậy <br/> Mặt hàng buồn bán</h2>
-
-    <script>
-        const hoaqua = ['bưởi','xoài','cam','quýt']
-
-        document.write('Các loại hoa quả:' + "<br/>")
-        for (const qua of hoaqua) {
-            document.write(qua + "<br/>")
-        }
-
-        let hat = ['đậu đen','đậu đỏ','đậu bắp','đậu nành','đậu biếc']
-
-        document.write('Các loại đậu:' + "<br/>")
-        for (let index = 0; index < hat.length; index++) {
-            const dau = hat[index]
-            document.write(dau + "<br/>")            
-        }
-    </script>
-
-    <div class="hoctap">
-        Ngoài ra chúng tôi còn buôn bán các dụng cụ học tập khác nhau
-    </div>
-
-    <div class="xaphong">
-        Chúng tôi còn bán các loại xà phòng khác
-    </div>
+    <h1>Ngày hôm nay trang web này mang đến cho các bạn những mặt hàng rất đáng tin cậy</h1>
 
     <div>
         <ul class="xaphong">
@@ -101,7 +62,7 @@
     </div>
 
     <div>
-        <img width="300" src="https://cf.shopee.vn/file/fd2be2735e5a3167aea8aa926db133f9" alt="Lifebouy hân hạnh tài trợ chương trình này" />
+        <img class="image" src="https://cf.shopee.vn/file/fd2be2735e5a3167aea8aa926db133f9" alt="Lifebouy hân hạnh tài trợ chương trình này" />
     </div>
 
     <h1 class="contact">Để đặt hàng các bạn vui lòng chọn công ty gần nhất</h1>
@@ -143,10 +104,10 @@
         <div>
             <label>Chọn mặt hàng bạn muốn mua</label>
             <select>
-                <option>Hoa quả</option>
-                <option>Hạt</option>
-                <option>Xà phòng</option>
-                <option>Đô dùng học tập</option>
+                <option>Sữa tắm</option>
+                <option>Dầu gội</option>
+                <option>Bột giặt</option>
+                <option>Nước xả</option>
             </select>
         </div>
         
@@ -156,8 +117,8 @@
     </form>
 
     <footer>
-        <span>Click vào đây để biết thêm </span>
-        <a class="contact" href="https://www.facebook.com/vuquang.tran.0511/">thông tin chi tiết</a>    
+        <span>Click vào đây để </span>
+        <a class="contact" href="https://www.facebook.com/vuquang.tran.0511/">tìm hiểu thêm</a>    
     </footer>
 </body>
 </html>
