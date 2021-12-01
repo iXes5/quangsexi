@@ -1,0 +1,34 @@
+    h1 {
+        color: red
+    }
+
+    h2 {
+        color: blue
+    }
+
+    span {
+        color: black
+    }
+
+    .xaphong {
+        color: black;
+        font-size: large;
+        font-weight: 800;
+        float: left;
+        margin-right: 50px
+    }
+
+    .sanpham {
+        color: darkred
+    }
+
+    .infor {
+        color: indigo;
+        font-weight: 700
+    }
+
+    .image {
+        width: 300;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }

@@ -4,53 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web mua bán của cửa hàng Vũ Quang</title>
+    <script src="./basic.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<script>
-    alert('Chào mừng đến với trang web của tôi!')
-</script>
 <body>
-    <script>
-        function changeBackground(color) {
-            document.body.style.background = color
-        }
-        window.addEventListener("load",function() {changeBackground('lightgreen')})    
-    </script>
+    <h1>VŨ QUANG SHOP</h1>
 
-    <style>
-        h1 {
-            color: red
-        }
-
-        span {
-            color: black
-        }
-
-        .xaphong {
-            color: brown;
-            font-size: large;
-            font-weight: 800
-        }
-
-        .contact {
-            color: blue
-        }
-
-        .company {
-            color: darkred
-        }
-
-        .infor {
-            color: indigo;
-            font-weight: 700
-        }
-
-        .image {
-            width: 300;
-            border-radius: 20px
-        }
-    </style>
-
-    <h1>Ngày hôm nay trang web này mang đến cho các bạn những mặt hàng rất đáng tin cậy</h1>
+    <h2>Ngày hôm nay cửa hàng mang đến cho các bạn những mặt hàng rất đáng tin cậy</h2>
 
     <div>
         <ul class="xaphong">
@@ -58,61 +18,68 @@
             <li>Dầu gội</li>
             <li>Bột giặt</li>
             <li>Nước xả</li>
+            <li>...</li>
         <ul>
     </div>
 
     <div>
-        <img class="image" src="https://cf.shopee.vn/file/fd2be2735e5a3167aea8aa926db133f9" alt="Lifebouy hân hạnh tài trợ chương trình này" />
+        <img class="image" src="./lifebouy.jpg" alt="Lifebouy hân hạnh tài trợ chương trình này" />
     </div>
-
-    <h1 class="contact">Để đặt hàng các bạn vui lòng chọn công ty gần nhất</h1>
-    <table class="company">
+    <table class="sanpham">
         <tr>
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Phone number</th>
+            <th>Sữa tắm</th>
+            <th>Dầu gội</th>
+            <th>Bột giặt</th>
+            <th>Nước xả</th>
         </tr>
         <tr>
-            <td>Hà Nội</td>
-            <td>Trần Vũ Quang</td>
-            <td>0357131476</td>
+            <td>Lifebouy</td>
+            <td>Rejoice</td>
+            <td>OMO</td>
+            <td>Downy</td>
         </tr>
         <tr>
-            <td>Hồ Chí Minh</td>
-            <td>Trần Quốc Đạt</td>
-            <td>0357131476</td>
+            <td>Romano</td>
+            <td>Sunsilk</td>
+            <td>Aba</td>
+            <td>Comfort</td>
         </tr>
         <tr>
-            <td>Đà Nẵng</td>
-            <td>Vũ Thị Hồng Loan</td>
-            <td>0337471556</td>
+            <td>Enchanteur</td>
+            <td>Head and shoulder</td>
+            <td>Ariel</td>
+            <td>Hygiene</td>
+        </tr>
+        <tr>
+            <td>Dove</td>
+            <td>Xmen</td>
+            <td>Tide</td>
+            <td>Orita</td>   
         </tr>
     </table>
-
     <form class="infor">
         <div>
             <label>Điền tên bạn vào đây</label>
-            <input type="text" placeholder="Cả họ và tên">
+            <input type="text">
         </div>
 
         <div>
             <label>Chọn giới tính của bạn</label>
-            <input type="radio" name="gender" value="nam" />Nam
-            <input type="radio" name="gender" value="nữ" />Nữ
-        </div>
-
-        <div>
-            <label>Chọn mặt hàng bạn muốn mua</label>
-            <select>
-                <option>Sữa tắm</option>
-                <option>Dầu gội</option>
-                <option>Bột giặt</option>
-                <option>Nước xả</option>
-            </select>
+            <input type="radio" name="gender" value="nam">Nam
+            <input type="radio" name="gender" value="nữ">Nữ
         </div>
         
         <div>
-            <button>Gửi Thông tin</button>
+            Chọn mặt hàng bạn muốn mua
+            <input type="checkbox" value="ST">Sữa tắm
+            <input type="checkbox" value="DG">Dầu gội
+            <input type="checkbox" value="BG">Bột giặt
+            <input type="checkbox" value="NX">Nước xả
+        </div>
+
+        <div>
+            <input onclick="send()" type="button" value="Submit">
+            <input onclick="resetForm()" type="button" value="Reset">
         </div>
     </form>
 
