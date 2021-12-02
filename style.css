@@ -1,5 +1,6 @@
     h1 {
-        color: red
+        color: white;
+        background-color: darkslategray;
     }
 
     h2 {
@@ -10,25 +11,49 @@
         color: black
     }
 
-    .xaphong {
-        color: black;
-        font-size: large;
-        font-weight: 800;
-        float: left;
-        margin-right: 50px
+    table, th, td {
+        border:1px solid black;
+    }
+    table {
+        border-collapse: collapse
     }
 
     .sanpham {
-        color: darkred
+        color: darkred;
+        margin-bottom: 30;
+        margin-top: 30;
+        font-size: 28
+    }
+    
+    .images1 {
+        width: 300;
+        height: 300;
+        border-radius: 20px;
+        float: left
+    }
+    .images2 {
+        width: 300;
+        height: 300;
+        border-radius: 20px
+    }
+
+    .xaphong {
+        color: black;
+        font-size: large;
+        font-weight: 800
     }
 
     .infor {
         color: indigo;
-        font-weight: 700
+        font-weight: 700;
+        font-size: 22
     }
 
-    .image {
-        width: 300;
-        border-radius: 20px;
-        margin-bottom: 30px;
+    .information {
+        font-size: 36;
+        color: indigo
+    }
+
+    .contact {
+        color: blue
     }
