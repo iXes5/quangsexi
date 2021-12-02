@@ -23,12 +23,12 @@
     </div>
 
     <div>
-        <img class="images1" src="images/lifebouy.jpg" alt="Lifebouy">
-        <img class="images2" src="images/romano.png" alt="Romano">
+        <img class="images" src="images/lifebouy.jpg" alt="Lifebouy">
+        <img class="images" src="images/romano.png" alt="Romano">
     </div>
     <div>
-        <img class="images1" src="images/omo.jpg" alt="OMO">
-        <img class="images2" src="images/downy.jpg" alt="Downy">
+        <img class="images" src="images/omo.jpg" alt="OMO">
+        <img class="images" src="images/downy.jpg" alt="Downy">
     </div>
     <table class="sanpham">
         <tr>
@@ -62,16 +62,16 @@
             <td>Orita</td>   
         </tr>
     </table>
-    <form class="infor">
-        <div class="information">Để mua hàng</div>
+    <form>
+        <div class="decide">Để mua hàng</div>
         <div>
-            <label>Điền tên bạn vào đây</label>
+            <label class="infor">Điền tên bạn vào đây</label>
             <input type="text">
         </div>
 
         <div>
-            <label>Chọn giới tính của bạn</label>
-            <input type="radio" name="gender" value="Nam checked>Nam
+            <label class="infor">Chọn giới tính của bạn</label>
+            <input type="radio" name="gender" value="Nam" checked>Nam
             <input type="radio" name="gender" value="Nữ">Nữ
         </div>
         
@@ -84,7 +84,7 @@
         </div>
 
         <div>
-            <input onclick="send()" type="button" value="Submit">
+            <input class="submit" onclick="send()" type="button" value="Submit">
             <input onclick="resetForm()" type="button" value="Reset">
         </div>
     </form>
