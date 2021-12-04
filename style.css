@@ -12,10 +12,6 @@
         color: black
     }
 
-    table, th, td {
-        border: 1px solid black;
-    }
-
     .long1 {
         width: 200
     }
@@ -24,15 +20,24 @@
         width: 120
     }
 
-    .sanpham {
+    .table1, td, th {
         color: darkred;
         margin-top: 30;
         font-size: 32;
         margin-right: 30;
         border-collapse: collapse;
-        text-align: center
+        text-align: center;
+        border: 1px solid black
     }
     
+    .table2 {
+        font-size: 24;
+        font-weight: 700;
+        color: indigo;
+        border: 0px;
+        text-align: left
+    }
+
     .images {
         width: 300;
         height: 300;

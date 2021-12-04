@@ -4,9 +4,9 @@ function send() {
     var age = arr[1].value;
     var email = arr[2].value;
     var check1 = arr[5].checked;
-    var check2 = arr[6].checked;
-    var check3 = arr[7].checked;
-    var check4 = arr[8].checked;
+    var check2 = arr[10].checked;
+    var check3 = arr[15].checked;
+    var check4 = arr[20].checked;
     var gender = "";
     var favorite = "";
     var arrString = email.split("");
@@ -17,7 +17,7 @@ function send() {
         gender = arr[4].value;
     }
 
-    for(var i=5; i<=8; i++) {
+    for(var i=5; i<=20; i=i+5) {
         if (arr[i].checked) {
             favorite = favorite + arr[i].value + " ";
         }

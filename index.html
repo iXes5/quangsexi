@@ -6,6 +6,7 @@
     <title>Web mua bán của cửa hàng Vũ Quang</title>
     <script src="./basic.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="data.py">
 </head>
 <body>
     <h1>VŨ QUANG SHOP</h1>
@@ -29,7 +30,7 @@
         <img class="images" src="images/omo.jpg" alt="OMO">
         <img class="images" src="images/downy.jpg" alt="Downy">
     </div>
-    <table class="sanpham">
+    <table class="table1">
         <tr>
             <th class="long1">Sữa tắm</th>
             <th class="long2">Giá</th>
@@ -104,13 +105,38 @@
             <input type="radio" name="gender" value="Nữ">Nữ
         </div>
         
-        <div>
-            <span class="infor">Chọn mặt hàng bạn muốn mua</span>
-            <input type="checkbox" value="Sữa tắm">Sữa tắm
-            <input type="checkbox" value="Dầu gội">Dầu gội
-            <input type="checkbox" value="Bột giặt">Bột giặt
-            <input type="checkbox" value="Nước xả">Nước xả
-        </div>
+        <div class="infor">Chọn mặt hàng bạn muốn mua</div>
+
+        <table>
+            <tr id="ST">
+                <td class="table2"><input type="checkbox" value="Sữa tắm">Sữa tắm:</td>
+                <td class="table2">Lifebouy<input type="text"></td>
+                <td class="table2">Romano<input type="text"></td>
+                <td class="table2">Enchanteur<input type="text"></td>
+                <td class="table2">Dove<input type="text"></td>
+            </tr>
+            <tr id="DG">
+                <td class="table2"><input type="checkbox" value="Dầu gội">Dầu gội:</td>
+                <td class="table2">Sunsilk<input type="text"></td>
+                <td class="table2">Rejoice<input type="text"></td>
+                <td class="table2">Pantene<input type="text"></td>
+                <td class="table2">Xmen<input type="text"></td>
+            </tr>
+            <tr id="BG">
+                <td class="table2"><input type="checkbox" value="Bột giặt">Bột giặt:</td>
+                <td class="table2">OMO<input type="text"></td>
+                <td class="table2">Aba<input type="text"></td>
+                <td class="table2">Ariel<input type="text"></td>
+                <td class="table2">Tide<input type="text"></td>
+            </tr>
+            <tr id="NX">
+                <td class="table2"><input type="checkbox" value="Nước xả">Nước xả:</td>
+                <td class="table2">Downy<input type="text"></td>
+                <td class="table2">Comfort<input type="text"></td>
+                <td class="table2">Hygiene<input type="text"></td>
+                <td class="table2">Orita<input type="text"></td>
+            </tr>
+        </table>
 
         <div>
             <input class="apply" onclick="send()" type="button" value="Submit">
