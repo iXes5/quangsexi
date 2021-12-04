@@ -1,7 +1,3 @@
-    body {
-        background-color: rgba(255, 255, 0, 0.911)
-    }
-    
     h1 {
         color: white;
         background-color: darkslategray;
@@ -17,19 +13,24 @@
     }
 
     table, th, td {
-        border:1px solid black;
+        border: 1px solid black;
     }
-    table {
-        border-collapse: collapse;
-        text-align: center;
-        float: left
+
+    .long1 {
+        width: 200
+    }
+
+    .long2 {
+        width: 120
     }
 
     .sanpham {
         color: darkred;
         margin-top: 30;
-        font-size: 28;
+        font-size: 32;
         margin-right: 30;
+        border-collapse: collapse;
+        text-align: center
     }
     
     .images {
@@ -54,9 +55,15 @@
     .infor {
         color: indigo;
         font-weight: 700;
-        font-size: 22
+        font-size: 25
+    }
+
+    .apply {
+        font-size: 20;
+        font-family: 'Times New Roman', Times, serif;
     }
 
     .contact {
         color: green;
+        font-size: 18
     }
