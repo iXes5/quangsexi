@@ -1,74 +1,84 @@
-    h1 {
-        color: white;
-        background-color: darkslategray;
-        font-size: 50
-    }
+h1 {
+    color: white;
+    background-color: darkslategray;
+    font-size: 50
+}
 
-    h2 {
-        color: red
-    }
+h2 {
+    color: red;
+    font-size: 40
+}
 
-    span {
-        color: black
-    }
+.top {
+    color: blue;
+    font-size: 24;
+    font-weight: 800
+}
 
-    .long1 {
-        width: 200
-    }
+span {
+    color: black
+}
 
-    .long2 {
-        width: 120
-    }
+.long1 {
+    width: 180
+}
 
-    .table1, td, th {
-        color: darkred;
-        margin-top: 30;
-        font-size: 32;
-        margin-right: 30;
-        border-collapse: collapse;
-        text-align: center;
-        border: 1px solid black
-    }
-    
-    .table2 {
-        font-size: 24;
-        font-weight: 700;
-        color: indigo;
-        border: 0px;
-        text-align: left
-    }
+.long2 {
+    width: 100
+}
 
-    .images {
-        width: 300;
-        height: 300;
-        border-radius: 20px
-    }
+.table1, td, th {
+    color: darkred;
+    margin-top: 30;
+    font-size: 32;
+    margin-right: 30;
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid black
+}
 
-    .xaphong {
-        color: blue;
-        font-size: large;
-        font-weight: 800
-    }
+.table2 td {
+    font-size: 24;
+    font-weight: 700;
+    color: indigo;
+    border: 0px;
+    text-align: left
+}
 
-    .decide {
-        font-size: 36;
-        font-weight: 700;
-        color: indigo;
-        margin-top: 30;
-    }
+.table2 td input {
+    width: 70px
+}
 
-    .infor {
-        color: indigo;
-        font-weight: 700;
-        font-size: 25
-    }
+.images {
+    width: 300;
+    height: 300;
+    border-radius: 20px
+}
 
-    .apply {
-        font-size: 20;
-        font-family: 'Times New Roman', Times, serif;
-    }
+.decide {
+    font-size: 36;
+    font-weight: 700;
+    color: indigo;
+    margin-top: 30;
+}
 
-    .contact {
-        color: green;
-        font-size: 18
-    }
+.infor {
+    color: indigo;
+    font-weight: 700;
+    font-size: 25
+}
+
+.apply {
+    font-size: 20;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#time {
+    font-size: 26;
+    font-weight: 700
+}
+
+.contact {
+    color: green;
+    font-size: 18
+}

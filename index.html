@@ -4,18 +4,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web mua bán của cửa hàng Vũ Quang</title>
-    <script src="./basic.js"></script>
+    <script src="./basic.js"></script> 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="data.py">
 </head>
 <body>
     <h1>VŨ QUANG SHOP</h1>
 
-    <h2>Cửa hàng mang đến cho bạn những mặt hàng rất đáng tin cậy</h2>
+    <h2>Cửa hàng đạt chuẩn quốc tế 5 sao</h2>
 
     <div>
-        <ul class="xaphong">
-            <li>Đạt chuẩn quốc tế</li>
+        <ul class="top">
             <li>Số lượng lớn mặt hàng</li>
             <li>Đảm bảo chất lượng</li>
             <li>Miễn phí giao dịch</li>
@@ -24,60 +22,58 @@
 
     <div>
         <img class="images" src="images/lifebouy.jpg" alt="Lifebouy">
-        <img class="images" src="images/romano.png" alt="Romano">
-    </div>
-    <div>
+        <img class="images" src="./images/sunsilk.jpg" alt="Sunsilk">
         <img class="images" src="images/omo.jpg" alt="OMO">
         <img class="images" src="images/downy.jpg" alt="Downy">
     </div>
-    <table class="table1">
+    <div>
+        <img class="images" src="./images/xmen.jpg" alt="Xmen">
+        <img class="images" src="images/romano.jpg" alt="Romano">
+        <img class="images" src="./images/aba.jpg" alt="Aba">
+        <img class="images" src="./images/comfort.jpg" alt="Comfort">
+    </div>
+    <table class="table1" id="cost">
         <tr>
-            <th class="long1">Sữa tắm</th>
-            <th class="long2">Giá</th>
-            <th class="long1">Dầu gội</th>
-            <th class="long2">Giá</th>
-            <th class="long1">Bột giặt</th>
-            <th class="long2">Giá</th>
-            <th class="long1">Nước xả</th>
-            <th class="long2">Giá</th>
+            <td>Sữa tắm</td>
+            <td class="long1">Lifebouy</td>
+            <td class="long2">30000</td>
+            <td class="long1">Xmen</td>
+            <td class="long2">36000</td>
+            <td class="long1">Enchanteur</td>
+            <td class="long2">35000</td>
+            <td class="long1">Dove</td>
+            <td class="long2">40000</td>
         </tr>
         <tr>
-            <td>Lifebouy</td>
-            <td>30000</td>
-            <td>Rejoice</td>
-            <td>25000</td>
-            <td>OMO</td>
-            <td>65000</td>
-            <td>Downy</td>
-            <td>5000</td>
-        </tr>
-        <tr>
-            <td>Romano</td>
-            <td>36000</td>
+            <td>Dầu gội</td>
             <td>Sunsilk</td>
             <td>24000</td>
-            <td>Aba</td>
-            <td>62000</td>
-            <td>Comfort</td>
-            <td>7000</td>
-        </tr>
-        <tr>
-            <td>Enchanteur</td>
-            <td>35000</td>
+            <td>Rejoice</td>
+            <td>25000</td>
             <td>Pantene</td>
             <td>28000</td>
-            <td>Ariel</td>
-            <td>60000</td>
-            <td>Hygiene</td>
-            <td>5000</td>
+            <td>Romano</td>
+            <td>27000</td>
         </tr>
         <tr>
-            <td>Dove</td>
-            <td>40000</td>
-            <td>Xmen</td>
-            <td>37000</td>
+            <td>Bột giặt</td>
+            <td>OMO</td>
+            <td>65000</td>
+            <td>Aba</td>
+            <td>62000</td>
+            <td>Ariel</td>
+            <td>60000</td>
             <td>Tide</td>
             <td>64000</td>
+        </tr>
+        <tr>
+            <td>Nước xả</td>
+            <td>Downy</td>
+            <td>5000</td>
+            <td>Comfort</td>
+            <td>7000</td>
+            <td>Hygiene</td>
+            <td>5000</td>
             <td>Orita</td>
             <td>10000</td>   
         </tr>
@@ -108,41 +104,46 @@
         <div class="infor">Chọn mặt hàng bạn muốn mua</div>
 
         <table>
-            <tr id="ST">
-                <td class="table2"><input type="checkbox" value="Sữa tắm">Sữa tắm:</td>
-                <td class="table2">Lifebouy<input type="text"></td>
-                <td class="table2">Romano<input type="text"></td>
-                <td class="table2">Enchanteur<input type="text"></td>
-                <td class="table2">Dove<input type="text"></td>
+            <tr class="table2">
+                <td>Lifebouy<input type="text" name="Lifebouy"></td>
+                <td>Xmen<input type="text" name="Xmen"></td>
+                <td>Enchanteur<input type="text" name="Enchanteur"></td>
+                <td>Dove<input type="text" name="Dove"></td>
             </tr>
-            <tr id="DG">
-                <td class="table2"><input type="checkbox" value="Dầu gội">Dầu gội:</td>
-                <td class="table2">Sunsilk<input type="text"></td>
-                <td class="table2">Rejoice<input type="text"></td>
-                <td class="table2">Pantene<input type="text"></td>
-                <td class="table2">Xmen<input type="text"></td>
+            <tr class="table2">
+                <td>Sunsilk<input type="text" name="Sunsilk"></td>
+                <td>Rejoice<input type="text" name="Rejoice"></td>
+                <td>Pantene<input type="text" name="Pantene"></td>
+                <td>Romano<input type="text" name="Romano"></td>
             </tr>
-            <tr id="BG">
-                <td class="table2"><input type="checkbox" value="Bột giặt">Bột giặt:</td>
-                <td class="table2">OMO<input type="text"></td>
-                <td class="table2">Aba<input type="text"></td>
-                <td class="table2">Ariel<input type="text"></td>
-                <td class="table2">Tide<input type="text"></td>
+            <tr class="table2">
+                <td>OMO<input type="text" name="OMO"></td>
+                <td>Aba<input type="text" name="Aba"></td>
+                <td>Ariel<input type="text" name="Ariel"></td>
+                <td>Tide<input type="text" name="Tide"></td>
             </tr>
-            <tr id="NX">
-                <td class="table2"><input type="checkbox" value="Nước xả">Nước xả:</td>
-                <td class="table2">Downy<input type="text"></td>
-                <td class="table2">Comfort<input type="text"></td>
-                <td class="table2">Hygiene<input type="text"></td>
-                <td class="table2">Orita<input type="text"></td>
+            <tr class="table2">
+                <td>Downy<input type="text" name="Downy"></td>
+                <td>Comfort<input type="text" name="Comfort"></td>
+                <td>Hygiene<input type="text" name="Hygiene"></td>
+                <td>Orita<input type="text" name="Orita"></td>
             </tr>
         </table>
 
         <div>
+            Một số mặt hàng dùng thử
+            <input type="checkbox" value="Kem đánh răng">Kem đánh răng
+            <input type="checkbox" value="Nước lau nhà">Nước lau nhà
+            <input type="checkbox" value="Sữa rửa mặt">Sữa rửa mặt
+        </div>
+
+        <div class="infor">
             <input class="apply" onclick="send()" type="button" value="Submit">
             <input class="apply" onclick="resetForm()" type="button" value="Reset">
         </div>
     </form>
+
+    <p id="time"></p>
 
     <footer>
         <span class="contact">Click vào đây để </span>
