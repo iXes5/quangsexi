@@ -90,7 +90,7 @@ function send() {
 
     //Lấy thời gian
     var today = new Date();
-    var clock = today.getHours()+"/"+today.getMinutes()+"/"+today.getSeconds()+"-"+today.getDate()+"/"+today.getMonth()+"/"+today.getFullYear();
+    var clock = today.getHours()+"/"+today.getMinutes()+"/"+today.getSeconds()+"-"+today.getDate()+"/"+(today.getMonth()+1)+"/"+today.getFullYear();
 
     //Báo cáo thông tin
     var choice1 = confirm("Đã xác nhận thông tin của bạn\n"+"Họ tên: "+name+"\n"+"Tuổi: "+age+"\n"+"Giới tính: "+gender+"\n"+"Địa chỉ email: "+email);
