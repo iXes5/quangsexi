@@ -10,7 +10,18 @@ function send() {
     var gender = "";
     var test = "";
     var arrString = email.split("");
-    var arrCost = [30000, 36000, 35000, 40000, 24000, 25000, 28000, 27000, 65000, 62000, 60000, 64000, 5000, 7000, 5000, 10000];
+    var arrCost = [];
+    //Dùng thư viện jQuery để gán giá tiền vào trong mảng
+    $("#cost tr").each(function() {
+        var cost1 = $(this).find("td").eq(2).html();
+        var cost2 = $(this).find("td").eq(4).html();
+        var cost3 = $(this).find("td").eq(6).html();
+        var cost4 = $(this).find("td").eq(8).html();
+        arrCost.push(cost1);
+        arrCost.push(cost2);
+        arrCost.push(cost3);
+        arrCost.push(cost4);
+    });
     var cost = 0;
     var product = "";
     var j = 0;
@@ -98,7 +109,7 @@ function send() {
     if (choice1 == 1) {
         alert('Thông tin đã được gửi');
     }
-    document.getElementById("time").innerHTML = "Đơn giá: " + cost + " (" + clock + ")"
+    document.getElementById("time").innerHTML = "Đơn giá: " + cost + "vnđ (" + clock + ")"
 }
 
 //Reset dữ liệu
