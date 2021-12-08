@@ -1,22 +1,33 @@
+body {
+    margin: 0px
+}
+
 h1 {
     color: white;
     background-color: darkslategray;
-    font-size: 50
+    font-size: 50;
+    width: 1400
 }
 
 h2 {
+    margin-left: 30;
     color: red;
-    font-size: 40
+    font-size: 40;
+    width: 1400
 }
 
 .top {
     color: blue;
     font-size: 24;
-    font-weight: 800
+    font-weight: 800;
+    margin-left: 25;
+    width: 1400
 }
 
-span {
-    color: black
+.left {
+    width: 70%;
+    float: left;
+    margin-left: 40
 }
 
 .long1 {
@@ -34,7 +45,7 @@ span {
     margin-right: 30;
     border-collapse: collapse;
     text-align: center;
-    border: 1px solid black
+    border: 3px solid black
 }
 
 .table2 td {

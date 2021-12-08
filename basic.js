@@ -13,19 +13,13 @@ function send() {
     var arrCost = [];
     //Dùng thư viện jQuery để gán giá tiền vào trong mảng
     $("#cost tr").each(function() {
-        var cost1 = $(this).find("td").eq(2).html();
-        var cost2 = $(this).find("td").eq(4).html();
-        var cost3 = $(this).find("td").eq(6).html();
-        var cost4 = $(this).find("td").eq(8).html();
-        arrCost.push(cost1);
-        arrCost.push(cost2);
-        arrCost.push(cost3);
-        arrCost.push(cost4);
+        var prize = $(this).find("td").eq(1).html();
+        arrCost.push(prize);
     });
     var cost = 0;
     var product = "";
     var j = 0;
-    
+
     //Giới tính
     if (arr[3].checked) {
         gender = arr[3].value;
