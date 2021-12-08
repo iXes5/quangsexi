@@ -25,7 +25,7 @@ h2 {
 }
 
 .left {
-    width: 60%;
+    width: 70%;
     float: left;
     margin-left: 40
 }
@@ -38,7 +38,7 @@ h2 {
     width: 100
 }
 
-.table1, td, th {
+.table1, td {
     color: darkred;
     margin-top: 30;
     font-size: 32;
