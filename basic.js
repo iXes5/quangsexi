@@ -25,6 +25,7 @@ function send() {
     var cost = 0;
     var product = "";
     var j = 0;
+    
     //Giới tính
     if (arr[3].checked) {
         gender = arr[3].value;
