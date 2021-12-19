@@ -1,3 +1,68 @@
+//Thay đổi màu của bảng giá thành khi rê chuột
+window.addEventListener("load", function() {
+    const table = [...document.querySelectorAll(".changeCssColor")];
+    table.forEach(item => item.addEventListener("mouseenter", handleHoverLink));
+
+    const line1 = document.createElement("div");
+    line1.className = "line-effect";
+    document.body.appendChild(line1);
+
+    const line2 = document.createElement("div");
+    line2.className = "line-effect";
+    document.body.appendChild(line2);
+
+    const line3 = document.createElement("div");
+    line3.className = "line-effect";
+    document.body.appendChild(line3);
+
+    const line4 = document.createElement("div");
+    line4.className = "line-effect";
+    document.body.appendChild(line4);
+
+    function handleHoverLink(event) {
+        const {left, top, width, height} = event.target.getBoundingClientRect();
+
+        line1.style.left = `${left}px`;
+        line1.style.top = `${top + height}px`;
+        line1.style.width = `${width}px`;
+
+        line2.style.left = `${left}px`;
+        line2.style.top = `${top}px`;
+        line2.style.width = `${width}px`;
+
+        line3.style.left = `${left}px`;
+        line3.style.top = `${top}px`;
+        line3.style.width = `${2}px`;
+        line3.style.height = `${height}px`;
+
+        line4.style.left = `${left + width}px`;
+        line4.style.top = `${top}px`;
+        line4.style.width = `${2}px`;
+        line4.style.height = `${height}px`;
+    }
+
+    const menu = document.querySelector("#cost");
+    menu.addEventListener("mouseleave", function() {
+        line1.style.left = 0;
+        line1.style.top = 0;
+        line1.style.width = 0;
+
+        line2.style.left = 0;
+        line2.style.top = 0;
+        line2.style.width = 0;
+
+        line3.style.left = 0;
+        line3.style.top = 0;
+        line3.style.width = 0;
+        line3.style.height = 0;
+
+        line4.style.left = 0;
+        line4.style.top = 0;
+        line4.style.width = 0;
+        line4.style.height = 0;
+    })
+});
+
 function send() {
     var arr = document.getElementsByTagName("input");
     var name =  arr[0].value;
@@ -10,6 +75,7 @@ function send() {
     var gender = "";
     var test = "";
     var arrString = email.split("");
+    //Mảng giá thành
     var arrCost = [];
     //Dùng thư viện jQuery để gán giá tiền vào trong mảng
     $("#cost tr").each(function() {
@@ -86,7 +152,7 @@ function send() {
         return;
     }
 
-    //Tính bill
+    //Tính bill, i và j sẽ chạy song song nhau, i cho số lượng và j cho giá thành
     for (var i=5; i<=20; i=i+1) {
         if (arr[i].value != "") {
             cost = cost + (arr[i].value * arrCost[j])
