@@ -8,17 +8,23 @@
     <title>Web mua bán của cửa hàng Vũ Quang</title>
 
     <script src="./basic.js"></script>
-    <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
+    <link rel="stylesheet" href="style.css">
     <div>
-        <div class="head">VŨ QUANG SHOP</div>
+        <div class="head">
+            <div class="title">VŨ QUANG SHOP</div>
+        </div>
         <div class="body">
             <div class="left">
-                <img class="images" src="./images/sunsilk.jpg" alt="Sunsilk">
-                <img class="images" src="./images/xmen.jpg" alt="Xmen">
-                <img class="images" src="images/romano.jpg" alt="Romano">
+                <table class="imagesout">
+                    <tr>
+                        <td><img class="images" src="./images/sunsilk.jpg" alt="Sunsilk"></td>
+                        <td><img class="images" src="./images/xmen.jpg" alt="Xmen"></td>
+                        <td><img class="images" src="images/romano.jpg" alt="Romano"></td>
+                    </tr>
+                </table>
                 <div>
                 <ul class="standard">
                     <li>Số lượng lớn mặt hàng</li>
@@ -86,79 +92,77 @@
                     </div>
         
                     <div class="infor">
-                        <input class="apply" onclick="send()" type="button" value="Submit">
+                        <input class="apply" onclick="send()" type="button" value="Gửi thông tin">
                         <input class="apply" onclick="resetForm()" type="button" value="Reset">
                     </div>
                 </form>
                 
                 <p id="time"></p>
-
-                <span class="contact">Click vào đây để </span>
-                <a class="contact" href="https://www.facebook.com/vuquang.tran.0511/">tìm hiểu thêm</a>
             </div>
+
             <div class="right">
                 <table class="table1" id="cost">
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>Lifebouy</td>
                         <td>30000</td>
                     </tr>
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>Xmen</td>
                         <td>36000</td>
                     </tr>
-                    <tr class="changeCssColor">    
+                    <tr class="change">    
                         <td>Enchanteur</td>
                         <td>35000</td>
                     </tr>
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>Dove</td>
                         <td>40000</td>
                     </tr>
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>Sunsilk</td>
                         <td>24000</td>
                     </tr>
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>Rejoice</td>
                         <td>25000</td>
                     </tr>
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>Pantene</td>
                         <td>28000</td>
                     </tr>
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>Romano</td>
                         <td>27000</td>
                     </tr>
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>OMO</td>
                         <td>65000</td>
                     </tr>
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>Aba</td>
                         <td>62000</td>
                     </tr>
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>Ariel</td>
                         <td>60000</td>
                     </tr>
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>Tide</td>
                         <td>64000</td>
                     </tr>
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>Giá</td>
                         <td>5000</td>
                     </tr>
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>Comfort</td>
                         <td>7000</td>
                     </tr>
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>Hygiene</td>
                         <td>5000</td>
                     </tr>
-                    <tr class="changeCssColor">
+                    <tr class="change">
                         <td>Orita</td>
                         <td>10000</td>   
                     </tr>
@@ -166,7 +170,32 @@
             </div>
         </div>
         <div class="tail">
-
+            <div class="logo">
+                <canvas id="drag" width="244" height="206"></canvas>
+            </div>
+            <div>
+                <table class="contact">
+                    <tr><td>Thông tin chi tiết</td></tr>
+                    <tr>
+                        <td>Email: quangsexy01@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Số điện thoại: 0357131476</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Facebook:</span>
+                            <a href="https://www.facebook.com/vuquang.tran.0511/">Vũ Quang</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Instagram:</span>
+                            <a href="https://www.instagram.com/tvq_sexi/">Vũ Quang</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </body>
