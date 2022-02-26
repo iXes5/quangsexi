@@ -5,42 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
-    <title>Web mua bán của cửa hàng Vũ Quang</title>
+    <title></title>
 
-    <script src="./basic.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
+
 <body>
     <link rel="stylesheet" href="style.css">
-    <div>
+    <script src="./basic.js"></script>
+
+    <div class="container">
+        <!--Shop name-->
         <div class="head">
             <div class="title">VŨ QUANG SHOP</div>
         </div>
+
         <div class="body">
             <div class="left">
-                <table class="imagesout">
+                <!--Products information (image)-->
+                <table class="image-out">
                     <tr>
-                        <td><img class="images" src="./images/sunsilk.jpg" alt="Sunsilk"></td>
-                        <td><img class="images" src="./images/xmen.jpg" alt="Xmen"></td>
-                        <td><img class="images" src="images/romano.jpg" alt="Romano"></td>
+                        <td><img class="image" src="./image/sunsilk.jpg" alt="Sunsilk"></td>
+                        <td><img class="image" src="./image/xmen.jpg" alt="Xmen"></td>
+                        <td><img class="image" src="image/romano.jpg" alt="Romano"></td>
                     </tr>
                 </table>
-                <div>
-                <ul class="standard">
-                    <li>Số lượng lớn mặt hàng</li>
-                    <li>Đảm bảo chất lượng</li>
-                    <li>Miễn phí giao dịch</li>
-                <ul>
-                </div>
+
+                <!--Input-->
                 <form class="infor">
                     <div class="decide">Để mua hàng</div>
+
                     <div>
                         <label class="infor">Điền tên bạn vào đây</label>
-                        <input type="text">
-                    </div>
-        
-                    <div>
-                        <label class="infor">Điền tuổi của bạn</label>
                         <input type="text">
                     </div>
         
@@ -58,33 +54,81 @@
                     <div class="infor">Chọn mặt hàng bạn muốn mua</div>
         
                     <table>
-                        <tr class="table2">
-                            <td>Lifebouy<input type="text" name="Lifebouy"></td>
-                            <td>Xmen<input type="text" name="Xmen"></td>
-                            <td>Enchanteur<input type="text" name="Enchanteur"></td>
-                            <td>Dove<input type="text" name="Dove"></td>
+                        <tr class="table-2">
+                            <td>
+                                <span>Lifebouy</span>
+                                <input type="text" name="Lifebouy">
+                            </td>
+                            <td>
+                                <span>Xmen</span>
+                                <input type="text" name="Xmen">
+                            </td>
+                            <td><span>
+                                <span>Enchanteur</span>
+                                <input type="text" name="Enchanteur">
+                            </td>
+                            <td>
+                                <span>Dove</span>
+                                <input type="text" name="Dove">
+                            </td>
                         </tr>
-                        <tr class="table2">
-                            <td>Sunsilk<input type="text" name="Sunsilk"></td>
-                            <td>Rejoice<input type="text" name="Rejoice"></td>
-                            <td>Pantene<input type="text" name="Pantene"></td>
-                            <td>Romano<input type="text" name="Romano"></td>
+                        <tr class="table-2">
+                            <td>
+                                <span>Sunsilk</span>
+                                <input type="text" name="Sunsilk">
+                            </td>
+                            <td>
+                                <span>Rejoice</span>
+                                <input type="text" name="Rejoice">
+                            </td>
+                            <td>
+                                <span>Pantene</span>
+                                <input type="text" name="Pantene">
+                            </td>
+                            <td>
+                                <span>Romano</span>
+                                <input type="text" name="Romano">
+                            </td>
                         </tr>
-                        <tr class="table2">
-                            <td>OMO<input type="text" name="OMO"></td>
-                            <td>Aba<input type="text" name="Aba"></td>
-                            <td>Ariel<input type="text" name="Ariel"></td>
-                            <td>Tide<input type="text" name="Tide"></td>
+                        <tr class="table-2">
+                            <td>
+                                <span>OMO</span>
+                                <input type="text" name="OMO">
+                            </td>
+                            <td>
+                                <span>Aba</span>
+                                <input type="text" name="Aba">
+                            </td>
+                            <td>
+                                <span>Ariel</span>
+                                <input type="text" name="Ariel">
+                            </td>
+                            <td>
+                                <span>Tide</span>
+                                <input type="text" name="Tide">
+                            </td>
                         </tr>
-                        <tr class="table2">
-                            <td>Downy<input type="text" name="Downy"></td>
-                            <td>Comfort<input type="text" name="Comfort"></td>
-                            <td>Hygiene<input type="text" name="Hygiene"></td>
-                            <td>Orita<input type="text" name="Orita"></td>
+                        <tr class="table-2">
+                            <td>
+                                <span>Downy</span>
+                                <input type="text" name="Downy">
+                            </td>
+                            <td>
+                                <span>Comfort</span>
+                                <input type="text" name="Comfort">
+                            </td>
+                            <td>
+                                <span>Hygiene</span>
+                                <input type="text" name="Hygiene">
+                            </td>
+                            <td>
+                                <span>Orita</span>
+                                <input type="text" name="Orita">
+                            </td>
                         </tr>
                     </table>
         
-                    <div>
+                    <div class="infor">
                         <div>Một số mặt hàng dùng thử</div>
                         <input type="checkbox" value="Kem đánh răng">Kem đánh răng
                         <input type="checkbox" value="Nước lau nhà">Nước lau nhà
@@ -100,8 +144,9 @@
                 <p id="time"></p>
             </div>
 
+            <!--Cost list-->
             <div class="right">
-                <table class="table1" id="cost">
+                <table class="table-1" id="cost">
                     <tr class="change">
                         <td>Lifebouy</td>
                         <td>30000</td>
@@ -169,33 +214,29 @@
                 </table>
             </div>
         </div>
+        
+        <!--Contact address-->
         <div class="tail">
-            <div class="logo">
-                <canvas id="drag" width="244" height="206"></canvas>
-            </div>
-            <div>
-                <table class="contact">
-                    <tr><td>Thông tin chi tiết</td></tr>
-                    <tr>
-                        <td>Email: quangsexy01@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Số điện thoại: 0357131476</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>Facebook:</span>
-                            <a href="https://www.facebook.com/vuquang.tran.0511/">Vũ Quang</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>Instagram:</span>
-                            <a href="https://www.instagram.com/tvq_sexi/">Vũ Quang</a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+            <table class="contact">
+                <tr>
+                    <td>Email: quangsexy01@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại: 0357131476</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Facebook:</span>
+                        <a href="https://www.facebook.com/vuquang.tran.0511/">Vũ Quang</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Ingram:</span>
+                        <a href="https://www.instagram.com/tvq_sexi/">Vũ Quang</a>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>

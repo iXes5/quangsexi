@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-color: #f5f5f5;
+    background-color: #f3f2e7;
 }
 
 .title {
@@ -15,52 +15,41 @@ body {
     margin-bottom: 50;
 }
 
-.standard {
-    color: black;
-    font-size: 22;
-    font-weight: 600;
-    margin-left: 25;
-    width: 100%;
-}
-
 .left {
     width: 60%;
     float: left;
     margin-left: 100;
 }
 
-.table1 {
+.table-1 {
     border-collapse: collapse;
 }
 
 .tail {
     margin-top: 70;
-    background-color: #2f4f4f;
+    background-color: #373538;
 }
 
-.long1 {
-    width: 160
-}
-
-.long2 {
-    width: 90
-}
-
-.table2 td {
+.table-2 td {
     font-size: 20;
     font-weight: 300;
     color: black;
     border: 0px;
     text-align: left;
-    background-color: #f5f5f5;
+    background-color: white;
 }
 
-.table2 td input {
+.table-2 td input {
     width: 70px;
-    background-color: #f5f5f5;
+    background-color: white;
 }
 
-.images {
+.table-2 td span {
+    font-weight: 800;
+    background-color: white;
+}
+
+.image {
     width: 200;
     height: 200;
     border-radius: 10px
@@ -68,20 +57,23 @@ body {
 
 .decide {
     font-size: 28;
-    font-weight: 300;
+    font-weight: 800;
     color: black;
 }
 
 .infor {
     color: black;
     font-weight: 300;
-    font-size: 20
+    font-size: 20;
+    font-weight: 800;
+    background-color: white;
 }
 
 .apply {
     font-size: 20;
     font-family: 'Times New Roman', Times, serif;
     background-color: white;
+    font-weight: 800;
 }
 
 #time {
@@ -89,19 +81,23 @@ body {
     font-weight: 700
 }
 
-.contact tr td, .contact tr td a{
+.contact {
+    margin-left: 900;
+    text-align: left;
+}
+
+.contact tr td a {
     font-size: 19;
     color: white;
-
 }
 
-.logo {
-    width: 45%;
-    float: left;
+.contact tr {
+    font-size: 19;
+    color: white;
 }
 
-canvas {
-    margin: auto;
+.contact tr:hover {
+    background-color: #524641;
 }
 
 /*Css for rect when enter mouse on images*/
@@ -118,11 +114,11 @@ canvas {
 .change {
     color: black;
     margin-top: 30;
-    font-size: 32;
-    margin-right: 30;
+    font-size: 28;
     border-collapse: collapse;
     text-align: center;
     background-color: white;
+
 }
 .change:hover {
     background-color: #eaeaea;

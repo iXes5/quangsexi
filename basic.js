@@ -1,6 +1,6 @@
-//Làm viền cho hình ảnh khi rê chuột
+//Set the animation for the image when enter the mouse
 window.addEventListener("load", function() {
-    const table = [...document.querySelectorAll(".images")];
+    const table = [...document.querySelectorAll(".image")];
     table.forEach(item => item.addEventListener("mouseenter", handleHoverLink));
 
     const line = document.createElement("div");
@@ -18,7 +18,7 @@ window.addEventListener("load", function() {
     }
 
     //Disapear rect when leave mouse
-    const menu = document.querySelector(".imagesout");
+    const menu = document.querySelector(".image-out");
     menu.addEventListener("mouseleave", function() {
         line.style.left = 0;
         line.style.top = 0;
@@ -27,34 +27,23 @@ window.addEventListener("load", function() {
     })
 });
 
-//Draw logo
-/*const cvs = document.getElementById("drag");
-const ctx = cvs.getContext("2d");
-const logo = new Image();
-logo.src = "images/logo.png";
-
-function logo() {
-ctx.fillRect(0, 0, cvs.width, cvs.height);
-ctx.drawImage(logo, 0, 0, 244, 206, 0, 0, cvs.width, cvs.height);
-}
-logo()*/
-
-//Gửi thông tin đi
+//Send the information
 function send() {
     var arr = document.getElementsByTagName("input");
     var name =  arr[0].value;
-    var age = arr[1].value;
-    var email = arr[2].value;
+    var email = arr[1].value;
     var check = 0;
-    var check1 = arr[21].checked;
-    var check2 = arr[22].checked;
-    var check3 = arr[23].checked;
+    var check1 = arr[20].checked;
+    var check2 = arr[21].checked;
+    var check3 = arr[22].checked;
     var gender = "";
     var test = "";
     var arrString = email.split("");
-    //Mảng giá thành
+
+    //Cost array
     var arrCost = [];
-    //Dùng thư viện jQuery để gán giá tiền vào trong mảng
+
+    //Use jQuery to find the prize
     $("#cost tr").each(function() {
         var prize = $(this).find("td").eq(1).html();
         arrCost.push(prize);
@@ -63,43 +52,34 @@ function send() {
     var product = "";
     var j = 0;
 
-    //Giới tính
-    if (arr[3].checked) {
-        gender = arr[3].value;
+    //Sex
+    if (arr[2].checked) {
+        gender = arr[2].value;
     }else {
-        gender = arr[4].value;
+        gender = arr[3].value;
     }
 
-    //Mặt hàng đã mua
-    for (var i=21; i<=23; i=i+1) {
+    //Products were bought
+    for (var i=20; i<=22; i=i+1) {
         if (arr[i].checked) {
             test = test + arr[i].value + " ";
         }
     }
 
-    //Điển thông tin
-    if (name == "" || email == "" || age == "") {
+    //Fill the gap
+    if (name == "" || email == "") {
         alert('Hãy điền đầy đủ thông tin!');
         return;
     }
 
-    //Kiểm tra tuổi 
-    if (isNaN(age)) {
-        alert("Tuổi phải là một con số!");
-        return;
-    }else if (age<=0) {
-        alert("Tuổi phải là số dương!");
-        return;
-    }
-
-    //Kiểm tra email
+    //Email checked
     if (arrString.includes("@") == false || arrString.includes(".") == false) {
         alert("Đây không phải là một địa chỉ email!");
         return;    
     }
 
-    //Kiểm tra mua hàng
-    for (var i=5; i<=20; i=i+1) {
+    //Buy checked
+    for (var i=4; i<=19; i=i+1) {
         if (arr[i].value == "") {
             
         }else {
@@ -121,7 +101,7 @@ function send() {
         return;
     }
 
-    //Kiểm tra dùng thử
+    //Test checked
     if (check1||check2||check3) {
 
     }else {
@@ -129,19 +109,34 @@ function send() {
         return;
     }
 
-    //Tính bill, i và j sẽ chạy song song nhau, i cho số lượng và j cho giá thành
-    for (var i=5; i<=20; i=i+1) {
+    //Bill, i and j go together, i for number và j for prize
+    for (var i=4; i<=19; i=i+1) {
         if (arr[i].value != "") {
             cost = cost + (arr[i].value * arrCost[j])
         };
         j = j + 1;
     }
 
-    //Lấy thời gian
+    //Age allow
+    var age = prompt("How old are you?");
+
+    //Age checked 
+    if (isNaN(age)) {
+        alert("Tuổi phải là một con số!");
+        return;
+    }else if (age <= 0) {
+        alert("Tuổi phải là số dương!");
+        return;
+    }else if (age <= 10) {
+        alert("You are not allowed to use this service, just support 10 and up");
+        return;
+    }
+
+    //Give the time
     var today = new Date();
     var clock = today.getHours()+"/"+today.getMinutes()+"/"+today.getSeconds()+"-"+today.getDate()+"/"+(today.getMonth()+1)+"/"+today.getFullYear();
 
-    //Báo cáo thông tin
+    //Confirm
     var choice1 = confirm("Đã xác nhận thông tin của bạn\n"+"Họ tên: "+name+"\n"+"Tuổi: "+age+"\n"+"Giới tính: "+gender+"\n"+"Địa chỉ email: "+email);
     var choice2 = confirm("Đơn mua hàng: \n"+product+"Tổng cộng: "+cost+"vnđ"+"\n"+"Sản phẩm dùng thử: "+test+"\n"+"Hãy dùng thử và đóng góp ý kiến cho chúng tôi nhé<3\n"+"("+clock+")");
     if (choice1 == 1) {
@@ -150,7 +145,7 @@ function send() {
     document.getElementById("time").innerHTML = "Đơn giá: " + cost + "vnđ (" + clock + ")"
 }
 
-//Reset dữ liệu
+//Reset data
 function resetForm(){
-    document.getElementsByTagName('form')[0].reset();
+    document.getElementsByTagName("form")[0].reset();
 }
